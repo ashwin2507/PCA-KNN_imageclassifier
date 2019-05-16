@@ -15,10 +15,10 @@ Programming Language Used: Python 3.6, Inc.
 ----------------
 CODE STRUCTURE
 -----------------
- 1) 	Loading the Training Data and extracting the labels of each:Used open CV (cv2) to load the image data and extract the labels of each image, resized the image to 28*28. 
- 2)	Implementing PCA as a function: First Flatten the image data to 1899(no. of training samples) by (28*28*3), then standardize the data, find co-variance matrix, find eigen-value, eigen-vector and lastly plotted the proportion of variance graph to decide how many Principal components to pick, in this case I picked 2 principal components, transformed the data to 2-D using the eigen-vector and eigen-value. 
-3) 	Load the Testing data, resize to 28* 28 and perform PCA on it as well. The code looks like this.
-4) 	Find K-nearest data points (using Euclidean distance) and take a majority vote to predict the label.
+1) Loading the Training Data and extracting the labels of each:Used open CV (cv2) to load the image data and extract the labels of each image, resized the image to 28*28. 
+2)	Implementing PCA as a function: First Flatten the image data to 1899(no. of training samples) by (28*28*3), then standardize the data, find co-variance matrix, find eigen-value, eigen-vector and lastly plotted the proportion of variance graph to decide how many Principal components to pick, in this case I picked 2 principal components, transformed the data to 2-D using the eigen-vector and eigen-value. 
+3) Load the Testing data, resize to 28* 28 and perform PCA on it as well. The code looks like this.
+4) Find K-nearest data points (using Euclidean distance) and take a majority vote to predict the label.
 
 --------------------
 HOW TO RUN THE CODE
